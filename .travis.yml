@@ -1,13 +1,15 @@
-language: go
-go: 
-  - "1.10"
-
-install:
-  - make deps
+before_install:
+  - go get -u github.com/golang/dep/cmd/dep
   - dep ensure
+
+language: go
+go:
+  - "1.8"
+  - "1.9"
+  - "1.10"
+  - master
 
 script:
   - make test
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+sudo: false

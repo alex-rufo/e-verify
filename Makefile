@@ -9,7 +9,3 @@ proto:
 .PHONY: test
 test:
 	go test -race ./...
-
-.PHONY: deps
-deps:
-	curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
