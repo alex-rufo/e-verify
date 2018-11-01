@@ -1,4 +1,5 @@
 # eVerify
+[![Build Status](https://travis-ci.org/alex-rufo/e-verify.svg?branch=master)](https://travis-ci.org/alex-rufo/e-verify)
 
 eVerify is an email verifier that can run on HTTP and gRPC. You can also use eVerify as a library.
 
