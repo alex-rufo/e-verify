@@ -1,0 +1,15 @@
+syntax = "proto3";
+package proto;
+
+message EmailVerifyRequest {
+  string email = 1;
+}
+
+message EmailVerifyResponse {
+  bool valid = 1;
+  string error = 2;
+}
+
+service VerifyService {
+  rpc Verify(EmailVerifyRequest) returns (EmailVerifyResponse);
+}
